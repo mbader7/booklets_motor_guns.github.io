@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motorcycles & Guns Booklets</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <h1 class="nav-title">Booklets Collection</h1>
+        <div class="nav-buttons">
+          <button class="nav-btn active" data-section="motorcycles">
+            Motorcycles
+          </button>
+          <button class="nav-btn" data-section="guns">Guns</button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <section id="motorcycles" class="section active">
+        <h2 class="section-title">Motorcycle Types</h2>
+        <div class="grid-container" id="motorcycles-grid">
+          <!-- Motorcycle items will be dynamically added here -->
+        </div>
+      </section>
+
+      <section id="guns" class="section">
+        <h2 class="section-title">Gun Types</h2>
+        <div class="grid-container" id="guns-grid">
+          <!-- Gun items will be dynamically added here -->
+        </div>
+      </section>
+    </main>
+
+    <script src="java.js"></script>
+  </body>
+</html>

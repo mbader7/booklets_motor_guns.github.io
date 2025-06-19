@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Item Details</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <h1 class="nav-title"><a href="index.html">Booklets Collection</a></h1>
+        <button id="back-button" class="nav-btn">Back to Category</button>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <section id="detail-page" class="section active">
+        <div class="detail-container">
+          <div class="detail-image-box">
+            <img id="detail-image" src="" alt="Item Image" />
+          </div>
+          <div class="detail-info-box">
+            <h2 id="detail-title" class="section-title"></h2>
+            <p id="detail-description" class="item-description"></p>
+            <div id="detail-specs" class="item-specs"></div>
+            <div class="item-specs">
+              <div class="spec-item">
+                <span class="spec-label">Average Price:</span>
+                <span id="detail-price" class="spec-value"></span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Modifiability:</span>
+                <span id="detail-modifiability" class="spec-value"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="java.js"></script>
+    <script src="detail.js"></script>
+  </body>
+</html>

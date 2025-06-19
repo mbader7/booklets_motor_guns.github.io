@@ -1,0 +1,542 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #1a252f 100%);
+  min-height: 100vh;
+  color: #ecf0f1;
+}
+
+.navbar {
+  background: rgba(44, 62, 80, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid #e74c3c;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.nav-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ecf0f1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+  color: #bdc3c7;
+  border: 2px solid #34495e;
+}
+
+.nav-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+  border-color: #e74c3c;
+  color: #ecf0f1;
+}
+
+.nav-btn.active {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.section {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.section.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #ecf0f1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.item-box {
+  background: rgba(52, 73, 94, 0.9);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(236, 240, 241, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.item-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+}
+
+.item-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(231, 76, 60, 0.2);
+  background: rgba(52, 73, 94, 0.95);
+}
+
+.item-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ecf0f1;
+  border-bottom: 2px solid #34495e;
+  padding-bottom: 0.5rem;
+}
+
+.item-description {
+  color: #bdc3c7;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.item-specs {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #34495e;
+}
+
+.spec-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.spec-label {
+  font-weight: 600;
+  color: #ecf0f1;
+}
+
+.spec-value {
+  color: #95a5a6;
+}
+
+/* Detail page styles */
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.detail-image-box {
+  background: rgba(52, 73, 94, 0.9);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(236, 240, 241, 0.1);
+  text-align: center;
+}
+
+.detail-image-box img {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.detail-info-box {
+  background: rgba(52, 73, 94, 0.9);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(236, 240, 241, 0.1);
+}
+
+.detail-info-box .section-title {
+  margin-bottom: 1.5rem;
+  color: #ecf0f1;
+  text-shadow: none;
+  text-align: left;
+}
+
+/* Gun and motorcycle types sections */
+.pistol-types-section,
+.rifle-types-section,
+.sniper-types-section,
+.revolver-types-section,
+.shotgun-types-section,
+.assault-types-section,
+.smg-types-section,
+.mg-types-section,
+.sport-bike-types-section,
+.cruiser-types-section,
+.touring-types-section,
+.naked-types-section {
+  margin-top: 3rem;
+}
+
+.pistol-types-section .section-title,
+.rifle-types-section .section-title,
+.sniper-types-section .section-title,
+.revolver-types-section .section-title,
+.shotgun-types-section .section-title,
+.assault-types-section .section-title,
+.smg-types-section .section-title,
+.mg-types-section .section-title,
+.sport-bike-types-section .section-title,
+.cruiser-types-section .section-title,
+.touring-types-section .section-title,
+.naked-types-section .section-title {
+  color: #ecf0f1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Grid containers for all types */
+.pistol-grid-container,
+.rifle-grid-container,
+.sniper-grid-container,
+.revolver-grid-container,
+.shotgun-grid-container,
+.assault-grid-container,
+.smg-grid-container,
+.mg-grid-container,
+.sport-bike-grid-container,
+.cruiser-grid-container,
+.touring-grid-container,
+.naked-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.detail-item-box {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  background: rgba(52, 73, 94, 0.9);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(236, 240, 241, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+
+.detail-item-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+}
+
+.detail-item-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(231, 76, 60, 0.2);
+  background: rgba(52, 73, 94, 0.95);
+}
+
+.item-image-container {
+  background: rgba(44, 62, 80, 0.5);
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  border: 2px solid rgba(236, 240, 241, 0.1);
+  min-width: 200px;
+  max-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-image {
+  max-width: 100%;
+  max-height: 150px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.item-content {
+  flex: 1;
+}
+
+.detail-item-box .item-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: #ecf0f1;
+}
+
+.detail-item-box .item-description {
+  color: #bdc3c7;
+  margin-bottom: 1rem;
+}
+
+.detail-item-box .spec-label {
+  color: #ecf0f1;
+}
+
+.detail-item-box .spec-value {
+  color: #95a5a6;
+}
+
+/* Navigation link styling */
+.nav-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-title a:hover {
+  color: #e74c3c;
+}
+
+/* Responsive design for detail page */
+@media (min-width: 768px) {
+  .detail-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .detail-image-box {
+    flex: 1;
+    max-width: 400px;
+  }
+
+  .detail-info-box {
+    flex: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .detail-item-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item-image-container {
+    min-width: auto;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .pistol-grid-container,
+  .rifle-grid-container,
+  .sniper-grid-container,
+  .revolver-grid-container,
+  .shotgun-grid-container,
+  .assault-grid-container,
+  .smg-grid-container,
+  .mg-grid-container,
+  .sport-bike-grid-container,
+  .cruiser-grid-container,
+  .touring-grid-container,
+  .naked-grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .nav-title {
+    font-size: 1.5rem;
+  }
+
+  .nav-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-btn {
+    flex: 1;
+    max-width: 150px;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .item-box {
+    padding: 1.5rem;
+  }
+
+  .detail-container {
+    padding: 1rem;
+  }
+
+  .detail-image-box,
+  .detail-info-box {
+    padding: 1.5rem;
+  }
+
+  .pistol-types-section .section-title,
+  .rifle-types-section .section-title,
+  .sniper-types-section .section-title,
+  .revolver-types-section .section-title,
+  .shotgun-types-section .section-title,
+  .assault-types-section .section-title,
+  .smg-types-section .section-title,
+  .mg-types-section .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Loading Animation */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #34495e;
+  border-top: 4px solid #e74c3c;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Loading state for images */
+.item-image,
+.detail-image-box img {
+  transition: opacity 0.3s ease;
+}
+
+.item-image:not([src]),
+.detail-image-box img:not([src]) {
+  opacity: 0.5;
+  background: linear-gradient(45deg, #34495e 25%, transparent 25%),
+    linear-gradient(-45deg, #34495e 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #34495e 75%),
+    linear-gradient(-45deg, transparent 75%, #34495e 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+/* Special styling for gun and motorcycle themed elements */
+.item-box:hover::before {
+  background: linear-gradient(135deg, #e74c3c 0%, #f39c12 50%, #e74c3c 100%);
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%,
+  100% {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  }
+  50% {
+    background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+  }
+}
+
+/* Enhanced focus states for accessibility */
+.nav-btn:focus,
+.item-box:focus {
+  outline: 2px solid #e74c3c;
+  outline-offset: 2px;
+}
+
+/* Improved contrast for better readability */
+.spec-value {
+  color: #bdc3c7;
+}
+
+.item-description {
+  color: #95a5a6;
+}
