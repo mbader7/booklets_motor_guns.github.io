@@ -13,7 +13,7 @@ const motorcycleData = [
     },
     averagePrice: "$5,000 - $10,000",
     modifiability: "High",
-    image: "build/images/motorcycles/standard-naked-bikes.jpg",
+    image: "build/motorcycles/standard-naked-bikes.jpg",
   },
   {
     id: "cruiser-motorcycles",
@@ -28,7 +28,7 @@ const motorcycleData = [
     },
     averagePrice: "$8,000 - $20,000",
     modifiability: "High",
-    image: "build/images/motorcycles/cruiser-motorcycles.jpg",
+    image: "build/motorcycles/cruiser-motorcycles.jpg",
   },
   {
     id: "touring-motorcycles",
@@ -43,7 +43,7 @@ const motorcycleData = [
     },
     averagePrice: "$15,000 - $30,000",
     modifiability: "Medium",
-    image: "build/images/motorcycles/touring-motorcycles.jpg",
+    image: "build/motorcycles/touring-motorcycles.jpg",
   },
   {
     id: "sport-bikes",
@@ -58,7 +58,7 @@ const motorcycleData = [
     },
     averagePrice: "$10,000 - $25,000",
     modifiability: "Medium",
-    image: "build/images/motorcycles/sport-bikes.jpg",
+    image: "build/motorcycles/sport-bikes.jpg",
   },
   {
     id: "off-road-dirt-bikes",
@@ -73,7 +73,7 @@ const motorcycleData = [
     },
     averagePrice: "$4,000 - $12,000",
     modifiability: "High",
-    image: "build/images/motorcycles/off-road-dirt-bikes.jpg",
+    image: "build/motorcycles/off-road-dirt-bikes.jpg",
   },
   {
     id: "dual-purpose-adventure",
@@ -88,7 +88,7 @@ const motorcycleData = [
     },
     averagePrice: "$7,000 - $18,000",
     modifiability: "Medium",
-    image: "build/images/motorcycles/dual-purpose-adventure.jpg",
+    image: "build/motorcycles/dual-purpose-adventure.jpg",
   },
   {
     id: "scooters",
@@ -103,7 +103,7 @@ const motorcycleData = [
     },
     averagePrice: "$2,000 - $7,000",
     modifiability: "Low",
-    image: "build/images/motorcycles/scooters.jpg",
+    image: "build/motorcycles/scooters.jpg",
   },
   {
     id: "electric-motorcycles",
@@ -118,7 +118,7 @@ const motorcycleData = [
     },
     averagePrice: "$10,000 - $30,000",
     modifiability: "Low",
-    image: "build/images/motorcycles/electric-motorcycles.jpg",
+    image: "build/motorcycles/electric-motorcycles.jpg",
   },
 ];
 
@@ -137,7 +137,7 @@ const gunData = [
     },
     averagePrice: "$400 - $1,500",
     modifiability: "High",
-    image: "build/images/guns/pistols.jpg",
+    image: "build/guns/pistols.jpg",
   },
   {
     id: "revolvers",
@@ -152,7 +152,7 @@ const gunData = [
     },
     averagePrice: "$300 - $1,200",
     modifiability: "Medium",
-    image: "build/images/guns/revolvers.jpg",
+    image: "build/guns/revolvers.jpg",
   },
   {
     id: "rifles",
@@ -167,7 +167,7 @@ const gunData = [
     },
     averagePrice: "$500 - $3,000",
     modifiability: "High",
-    image: "build/images/guns/rifles.jpg",
+    image: "build/guns/rifles.jpg",
   },
   {
     id: "shotguns",
@@ -182,7 +182,7 @@ const gunData = [
     },
     averagePrice: "$300 - $1,000",
     modifiability: "Medium",
-    image: "build/images/guns/shotguns.jpg",
+    image: "build/guns/shotguns.jpg",
   },
   {
     id: "assault-rifles",
@@ -197,7 +197,7 @@ const gunData = [
     },
     averagePrice: "$1,000 - $5,000",
     modifiability: "Very High",
-    image: "build/images/guns/assault-rifles.jpg",
+    image: "build/guns/assault-rifles.jpg",
   },
   {
     id: "sniper-rifles",
@@ -212,7 +212,7 @@ const gunData = [
     },
     averagePrice: "$2,000 - $10,000",
     modifiability: "High",
-    image: "build/images/guns/sniper-rifles.jpg",
+    image: "build/guns/sniper-rifles.jpg",
   },
   {
     id: "submachine-guns",
@@ -227,7 +227,7 @@ const gunData = [
     },
     averagePrice: "$800 - $3,000",
     modifiability: "Medium",
-    image: "build/images/guns/submachine-guns.jpg",
+    image: "build/guns/submachine-guns.jpg",
   },
   {
     id: "machine-guns",
@@ -242,7 +242,7 @@ const gunData = [
     },
     averagePrice: "$5,000 - $20,000+",
     modifiability: "Low",
-    image: "build/images/guns/machine-guns.jpg",
+    image: "build/guns/machine-guns.jpg",
   },
 ];
 
