@@ -144,7 +144,7 @@ function loadPistolTypes() {
       },
       averagePrice: "$500 - $600",
       modifiability: "High",
-      image: "build/images/pistols/glock-17.jpg",
+      image: "build/pistols/glock-17.jpg ",
     },
     {
       id: "m1911",
@@ -159,7 +159,7 @@ function loadPistolTypes() {
       },
       averagePrice: "$600 - $1,200",
       modifiability: "Very High",
-      image: "build/images/pistols/m1911.jpg",
+      image: "build/pistols/m1911.jpg",
     },
     {
       id: "beretta-92",
@@ -174,7 +174,7 @@ function loadPistolTypes() {
       },
       averagePrice: "$550 - $700",
       modifiability: "Medium",
-      image: "build/images/pistols/beretta-92.jpg",
+      image: "build/pistols/beretta-92.jpg",
     },
     {
       id: "sig-p320",
@@ -189,7 +189,7 @@ function loadPistolTypes() {
       },
       averagePrice: "$500 - $650",
       modifiability: "Very High",
-      image: "build/images/pistols/sig-p320.jpg",
+      image: "build/pistols/sig-p320.jpg",
     },
     {
       id: "smith-wesson-mp",
@@ -204,7 +204,7 @@ function loadPistolTypes() {
       },
       averagePrice: "$400 - $550",
       modifiability: "High",
-      image: "build/images/pistols/smith-wesson-mp.jpg",
+      image: "build/pistols/smith-wesson-mp.jpg",
     },
     {
       id: "cz-75",
@@ -219,7 +219,7 @@ function loadPistolTypes() {
       },
       averagePrice: "$500 - $700",
       modifiability: "Medium",
-      image: "build/images/pistols/cz-75.jpg",
+      image: "build/pistols/cz-75.jpg",
     },
   ];
 
@@ -257,7 +257,7 @@ function loadRifleTypes() {
       },
       averagePrice: "$400 - $2,000",
       modifiability: "High",
-      image: "build/images/rifles/rifle-actions.png",
+      image: "build/rifles/rifle-actions.png",
     },
     {
       id: "lever-action-rifle",
@@ -272,7 +272,7 @@ function loadRifleTypes() {
       },
       averagePrice: "$500 - $1,500",
       modifiability: "Medium",
-      image: "build/images/rifles/lever-action.jpg",
+      image: "build/rifles/lever-action.jpg",
     },
     {
       id: "semi-auto-rifle",
@@ -287,7 +287,7 @@ function loadRifleTypes() {
       },
       averagePrice: "$600 - $3,000",
       modifiability: "Very High",
-      image: "build/images/rifles/rifle-types.jpg",
+      image: "build/rifles/rifle-types.jpg",
     },
     {
       id: "break-action-rifle",
@@ -302,7 +302,7 @@ function loadRifleTypes() {
       },
       averagePrice: "$200 - $800",
       modifiability: "Low",
-      image: "build/images/rifles/bolt-vs-lever.jpg",
+      image: "build/rifles/bolt-vs-lever.jpg",
     },
   ];
 
@@ -339,7 +339,7 @@ function loadSniperRifleTypes() {
       },
       averagePrice: "$8,000 - $12,000",
       modifiability: "Medium",
-      image: "build/images/sniper-rifles/barrett-m82.jpg",
+      image: "build/sniper-rifles/barrett-m82.jpg",
     },
     {
       id: "remington-700",
@@ -354,7 +354,7 @@ function loadSniperRifleTypes() {
       },
       averagePrice: "$600 - $2,500",
       modifiability: "Very High",
-      image: "build/images/sniper-rifles/sniper-evolution.jpg",
+      image: "build/sniper-rifles/sniper-evolution.jpg",
     },
     {
       id: "accuracy-international",
@@ -369,7 +369,7 @@ function loadSniperRifleTypes() {
       },
       averagePrice: "$5,000 - $15,000",
       modifiability: "High",
-      image: "build/images/sniper-rifles/best-sniper-rifles.jpeg",
+      image: "build/sniper-rifles/best-sniper-rifles.jpeg",
     },
     {
       id: "mk13-mod7",
@@ -384,7 +384,7 @@ function loadSniperRifleTypes() {
       },
       averagePrice: "$10,000 - $20,000",
       modifiability: "High",
-      image: "build/images/sniper-rifles/special-ops-sniper.jpg",
+      image: "build/sniper-rifles/special-ops-sniper.jpg",
     },
   ];
 
